@@ -19,3 +19,5 @@ jobs:
       run: |        
         npm i
         npm start
+        sleep 10
+        kill $(jobs -p)
