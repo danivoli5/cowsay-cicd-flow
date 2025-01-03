@@ -1,0 +1,21 @@
+name: Cowsay CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_application:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+    - name: Check out code 
+      uses: actions/checkout@v2
+      # Allow the runner to check out the source code from the repository.
+
+    - name: Run the application
+      working-directory: ./src
+      run: |        
+        npm i
+        npm start
