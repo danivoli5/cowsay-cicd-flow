@@ -48,7 +48,7 @@ jobs:
 
         # Wait for the application to start
         echo "Waiting for the application to start..."
-        sleep 15
+        sleep 20
 
         # Test the application endpoint
         echo "Testing the application endpoint..."
